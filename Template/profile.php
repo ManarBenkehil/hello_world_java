@@ -1,8 +1,5 @@
 <?php
-// Load WordPress environment
-define( 'WP_USE_THEMES', false );
-require_once( 'C:\Users\INFO\Downloads\wordpress-6.1.1\wp-config-sample.php' );
-
+ 
 // Define function to display employee profile
 function display_employee_profile(){
 
