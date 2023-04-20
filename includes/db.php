@@ -1,6 +1,6 @@
 <?php
 // Create database tables
-function ceate_wbdb(){
+function create_wpdb(){
 global $wpdb;
 $charset_collate = $wpdb->get_charset_collate();
 $table_name = $wpdb->prefix . 'Employee';
@@ -48,6 +48,5 @@ require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 dbDelta($sql);
 
 }
-register_activation_hook(__FILE__,'create_wpdb');
- 
 ?>
+ 
