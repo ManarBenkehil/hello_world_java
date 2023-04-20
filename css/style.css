@@ -29,7 +29,7 @@
                     
     width: 200px;
     height: 290px;
-    background-color: white url('../image/sillouette.png') no-repeat center center;
+    background-color: white no-repeat center center;
     background-size: cover;
     position: relative;
     margin-top: 100px;

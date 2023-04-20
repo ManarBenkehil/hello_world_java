@@ -8,6 +8,7 @@
   <div class="container">
     <div class="left-container">
         <div class="profile-pic">
+        <img src="../image/sillouette.png" alt="img" style="background: white no-repeat center center; width: 200px; height: 290px;"> 
                 <input type="file" id="profile-pic-input">
                 <span class="upload-icon">&#x2193;</span>
 		    </div>
@@ -17,19 +18,18 @@
           foreach($array1 as $field1){
             echo '<div>
             <h1 style="color:#fff; margin-left: 100px;">' . $field1 .' <br></h1>
-            <textarea name="field" cols="60" rows="20" style="margin-left: 100px;  color: #000; background-color: #fff;"></textarea>
+            <textarea name="field" cols="60" rows="10" style="margin-left: 100px;  color: #000; background-color: #fff;"></textarea>
             </div>';
           }
         ?>
-         
     </div>
     <div class="right-container">
      
        <div style="background-color: #000029; margin-top: 80px; margin-right: 60px; margin-left: 1px;"> 
-        <h1 style="margin-left: 50px; padding: 12px 12px 12px 12px; color: #fff;"></h1>
+        <h1 style="margin-left: 50px; padding: 12px 12px 12px 12px; color: #fff;">Full Name</h1>
        </div>
        <div style="background-color: #000029; margin-right: 60px; margin-left: 1px;"> 
-        <h1 style="margin-left: 50px; padding: 12px 12px 12px 12px; color: #fff;"></h1>
+        <h1 style="margin-left: 50px; padding: 12px 12px 12px 12px; color: #fff;">Department</h1>
        </div>
         
        <div style="background-color: #fff; margin-left: 40px; margin-right: 60px;">
@@ -52,7 +52,7 @@
           echo '<div style="background-color: #000029; margin-top: 80px; margin-right: 60px; margin-left: 1px;">
             <h1 style="margin-left: 50px; padding: 12px 12px 12px 12px; color: #fff;">' . $field2 . '<br></h1>
              </div>
-            <textarea name="field" cols="60" rows="20" style="margin-left: 100px; color: #000; background-color: #fff;"></textarea>';
+            <textarea name="field" cols="60" rows="10" style="margin-left: 100px; color: #000; background-color: #fff;"></textarea>';
             }
           ?>
         
