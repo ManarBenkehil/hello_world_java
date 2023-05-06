@@ -9,16 +9,13 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
-				<a href="#">My Website</a>
-			</div>
-
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#">search</a></li>
+					<li><a href="form.php">login</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+</body>
+</html>
