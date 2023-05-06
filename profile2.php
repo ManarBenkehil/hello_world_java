@@ -1,8 +1,4 @@
 <?php
-  
-  include("..\wp-config.php") ; 
-$email = $_GET['email'];
-
 global $wpdb;
 $query = "SELECT * FROM wp_employees WHERE email = '$email'";
 $results = $wpdb->get_results($query);
@@ -17,13 +13,10 @@ if (!empty($results)) :
   $department = $result->department;
   $email = $result->email;
   ?>
- 
 <!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 
-    <link rel="stylesheet" href="style.css" type="text/css">
     <style>html, body {
     height: 100%;
     margin: 0;
@@ -46,8 +39,7 @@ if (!empty($results)) :
    width: 60%;
    background-color: white;
    float: right;
-   }
-              
+   } 
     .profile-pic {
                     
     width: 200px;
@@ -109,13 +101,13 @@ if (!empty($results)) :
   <body>
   <div class="container">
     <div class="left-container">
-    <a href="../index.php" style="color: black; ">
+    <a href="index.php" style="color: black; ">
       <h4 style="margin-left: 20px">Back</h4>
       </a>
       <div class="inner-container"> 
      
         <div class="profile-pic ">
-        <img src="../image/sillouette.png" alt="img" style="background: white no-repeat center center;  width:  325px; height: 360px;   "> 
+        <img src="image/sillouette.png" alt="img" style="background: white no-repeat center center;  width:  325px; height: 360px;   "> 
                 <input type="file" id="profile-pic-input">
                 <span class="upload-icon">&#x2193;</span>
 		    </div>

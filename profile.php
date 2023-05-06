@@ -1,8 +1,6 @@
 <?php
- include('../wp-config.php');
-
+include("..\wp-config.php") ; 
 $email = $_GET['email'];
-
 global $wpdb;
 $query = "SELECT * FROM wp_employees WHERE email = '$email'";
 $results = $wpdb->get_results($query);
@@ -17,7 +15,6 @@ if (!empty($results)) :
   $department = $result->department;
   $email = $result->email;
   ?>
- 
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,8 +24,7 @@ if (!empty($results)) :
     <style>html, body {
     height: 100%;
     margin: 0;
-   }
-       
+   } 
    .container {
     width: 100%;  
    }
@@ -101,9 +97,6 @@ if (!empty($results)) :
      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
       background-color: #fff;
     }
-
-
-
      </style>
   </head>
   <body>
